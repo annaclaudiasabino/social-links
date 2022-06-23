@@ -1,0 +1,118 @@
+:root {
+  --primary-color-dark: #080121;
+  --primary-color: #C9C9E9;
+  --primary-color-hover: #A9A8E3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--primary-color-dark);
+}
+
+body, button, input, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 415px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.group-infos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 128px 0 0 0 ;
+}
+
+.image-and-link img {
+  margin: 0 auto;
+}
+
+.image-and-link p {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.015em;
+}
+
+.principal-buttons {
+  width: 100%;
+  height: 240px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.principal-buttons a {
+  width: 100%;
+  padding: 12px;
+  font: 600 16px 'Poppins', sans-serif;
+  text-transform: uppercase;
+  border: 1.5px var(--primary-color) solid;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.principal-buttons a:hover {
+  background-color: var(--primary-color-hover);
+  transition: all 500ms;
+  border-color: var(--primary-color-hover);
+  color: var(--primary-color-dark);
+}
+
+.icon-buttons {
+  width: 152px;
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-buttons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.icon-buttons a:hover {
+  background-color: var(--primary-color-hover);
+  transition: all 500ms;
+  border: 0;
+}
+
+.icon-buttons a:hover svg path {
+  stroke: var(--primary-color-dark);
+}
